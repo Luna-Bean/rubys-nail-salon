@@ -1,0 +1,1028 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+
+  body{
+  background: #c464ea;
+  background: linear-gradient(to right bottom, #d9e0de, #7042cd);
+  }
+  
+
+  .logo{
+    /* height: 200px;
+    width: 350px; */
+    height:auto;
+    width:50%;
+
+  }
+
+  .navButtons{
+    display: flex;
+    justify-content:space-around;
+    list-style: none;
+    color: aliceblue;
+    font: bold ;
+    width:100%;
+    
+
+  }
+  .navButtons :hover{
+    color: rgb(65, 49, 170)
+  
+  }
+
+  .navOne,.navTwo,.navThree,.navFour{
+    background-color: rgb(49, 4, 51, 0.7);
+    border: rgb(49, 4, 51, -0.3) 20px solid;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+
+/*************************************8
+Media Query for Mobile Nav Buttons
+****************************************/
+
+@media screen 
+and (max-width : 768px) {
+  .navFour,.navOne,.navThree,.navTwo{
+    border:rgb(49, 4, 51, 0.1) 6px solid;
+    border-radius: 5px;
+    
+  }
+
+ 
+  
+}
+
+
+@media screen and (max-width:425px) {
+  .navButtons{
+    width:94%;
+    }
+    .navFour,.navOne,.navThree,.navTwo{
+      font-size: 14px;
+    }
+  }
+
+@media screen and (max-width: 400px){
+  .navOne,.navTwo, .navThree, .navFour{
+  font-size: 10px;
+  border:rgb(49, 4, 51, 0.1) 3px solid;
+  border-radius: 5px;
+}
+}
+
+
+
+@media screen and (max-width:300px) {
+.navButtons,.navOne,.navTwo, .navThree, .navFour {
+display: block;
+border:rgb(49, 4, 51, 0.1) 1px solid;
+border-radius: 2px;
+
+background-color: hidden;
+    border: hidden;
+    border-radius: hidden;
+    font-size: 16px;
+
+  }
+  
+}
+
+
+
+
+  
+.salonAndSlogan, .bookAndNailWall,.aboutUs{
+  display: flex;
+  justify-content: space-between;
+  /* border: #7647d2 5px solid; border-radius: 2px;  */
+  background-color: rgba(72, 44, 79, 0.4);
+  width:100%;
+}
+  .salonImage{
+    display: flex;
+    width: 790px;
+    height: 481px;
+    margin-bottom: 1rem;
+
+   
+
+  }
+
+  .slogan{
+    /* display: flex;
+    justify-self: center;
+    align-self: center; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    color: whitesmoke;
+    width: 50%;
+    margin:10rem 2rem;
+
+
+
+
+
+    
+    /* fade in text for slogan */
+    display: inline-block;
+    font-size: 56px;
+    animation: fadeIn linear 8s;
+    -webkit-animation: fadeIn linear 9s;
+    -moz-animation: fadeIn linear 9s;
+    -o-animation: fadeIn linear 9s;
+    -ms-animation: fadeIn linear 9s;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+
+  
+
+
+/*********************************
+Media Query for Slogan and Slogan Image
+***********************************/
+@media screen and (max-width:1320px){
+  .slogan{
+    font-size: 32px;
+    margin: 2rem 0;
+    }
+
+    .salonImage{
+      height: 335px;
+      width: 580px;
+      }
+}
+
+
+@media screen and (max-width:1024px){
+  .slogan{
+    font-size: 38px;
+    margin: 4rem;
+    padding:1rem;
+    }
+
+    .salonImage{
+      height: 333px;
+      width: 556px;
+      margin-bottom: 1rem;
+      }
+}
+
+@media screen and (max-width:768px){
+  .salonImage{
+    height: 235px;
+    width:347px;
+    margin-top: 1rem;
+  }
+
+  .slogan{
+    font-size: 32px;
+    margin: 4rem 2rem 4rem 5rem;
+    padding:1rem;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .slogan{
+    font-size: 23px;
+    margin: 3rem 1rem;
+
+  }
+  .salonImage{
+    height:154px;
+    width:198px;
+    margin-top: 1rem;
+  }
+  
+}
+
+
+@media screen and (max-width:425px) {
+  .slogan{
+    font-size: 16px;
+    margin: 3rem 1rem;
+
+  }
+  .salonImage{
+    height:154px;
+    width:198px;
+    margin-top: 1rem;
+  }
+  
+}
+
+
+@media screen and (max-width:375px) {
+  .slogan{
+    font-size: 15px;
+    margin: 2rem 0rem;
+
+  }
+  .salonImage{
+    height:145px;
+    width:159px;
+    margin-top: 1rem;
+  }
+  
+}
+
+  
+
+
+
+
+
+
+  
+
+
+/* about us section  */
+
+
+.aboutUsContainer{
+/* display: flex; */
+font-size: 24px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+width: 100%;
+color: whitesmoke;
+margin:4rem 1rem;
+animation: fadeIn linear 8s;
+-webkit-animation: fadeIn linear 13s;
+-moz-animation: fadeIn linear 13s;
+-o-animation: fadeIn linear 13s;
+-ms-animation: fadeIn linear 13s;
+}
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+
+div>.span{
+
+  font-size: 52px; 
+  margin:0 0 0 0;
+  height:1rem;
+  
+}
+
+.aboutDescription{
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.aboutUsImage{
+  width:100%;
+  height: auto;
+  overflow: hidden;
+ 
+}
+.inner{
+  animation:aboutUsImage 8s;
+  margin-top:0;
+}
+@keyframes aboutUsImage {
+  from {
+    margin-right: -100%;
+  }
+
+  to {
+    margin-right: 0%;
+  }
+}
+
+/************************************************
+Media Query for About Us Text Section
+*************************************************/
+
+@media screen 
+and (max-width : 1024px) {
+  div>.span{
+   font-size:36px;
+    
+  }
+
+ 
+  
+}
+
+
+
+@media screen and (max-width:800px){
+  .span{
+    font-size: 24px;
+    }
+
+    .p{
+      font-size: 12px;
+  
+    }
+    .aboutUsContainer{
+      margin: 1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+  
+  div>.span{
+    font-size: 30px;
+  }
+  .aboutDescription{
+    font-size: 16px;
+  }
+  .aboutUsImage{
+
+    width:96%;
+    height: 220px;
+    overflow: hidden;
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width:480px){
+  .span{
+    font-size: 18px;
+    }
+    .p{
+      font-size: 8px;
+  }
+}
+
+@media screen and (max-width:426px) {
+ div>.span{
+  font-size: 22px;
+ }
+ .aboutUsContainer{
+  margin: 3rem 1rem;
+ }
+  .aboutDescription{
+    font-size: 9px;
+    margin-right:0.5rem;
+ }
+
+ .aboutUsImage{
+  width:108%;
+  height:151px;
+  overflow: hidden;
+  margin-left: -1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+ }
+
+  }
+
+
+  @media screen and (max-width:375px) {
+    div>.span{
+     font-size: 22px;
+    }
+     .aboutDescription{
+       font-size: 10px;
+    }
+   
+     }
+
+     @media screen and (max-width:320px) {
+      div>.span{
+       font-size: 22px;
+      }
+       .aboutDescription{
+         font-size: 8px;
+      }
+     
+       }
+  
+
+
+
+
+
+
+
+/* where about us section will fade in when you scroll  */
+   /* .tag{
+     display: flex;
+     opacity: 0;
+     transform: translate(0,10vh);
+     transition: all 5s;
+   
+   } 
+
+   .tag .visible{
+     opacity: 1;
+     transform: translate(0, 0);
+     
+   } */
+  
+
+
+/*Services Section*/
+
+
+.services{
+  margin-top:30px;
+  width:100%;
+  height: auto;
+}
+.servicesName{
+  display: flex;
+  justify-content: center;
+  color:whitesmoke;
+  font-size: 41px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom:4rem;
+}
+.servicesType{
+  margin-top: 30px;
+  display: flex;
+  color: whitesmoke;
+  justify-content: space-around;
+  font-size: 24px;
+  list-style-type: none;
+}
+
+/******************************************************
+*******Media Query for the services section********
+********************************************************/
+
+
+@media screen and (max-width:768px) {
+  .servicesName{
+    font-size: 32px;
+
+  }
+
+  .servicesType{
+    font-size: 20px;
+  }
+  
+}
+
+@media screen and (max-width:680px) {
+  .servicesName{
+    font-size: 22px;
+
+  }
+  .servicesType{
+    font-size: 14px;
+
+  }
+  
+}
+
+
+
+@media screen and (max-width:450px) {
+  .servicesType{ 
+    display: block;
+    margin: -3rem 1rem 1rem 8rem;
+    list-style: circle;
+  }
+  
+}
+
+@media screen and (max-width:426px) {
+  .servicesType{ 
+    display:  block;
+    margin: -3rem 1rem 1rem 8rem;
+    list-style: circle;
+  
+  }
+}
+
+@media screen and (max-width:376px) {
+  .servicesType{ 
+    display:  block;
+    margin: -3rem 1rem 1rem 6rem;
+    list-style: circle;
+  
+  }
+  .servicesName{
+    font-size: 22px;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .servicesType{ 
+    display:  block;
+    margin: -3rem 1rem 1rem 5rem;
+    list-style: circle;
+  
+  }
+  .servicesName{
+    font-size: 22px;
+    margin-right: 1rem;
+  }
+}
+
+
+
+   .galleryPics{
+     /* margin-left: 300px; */
+     display: flex;
+     width: 100%;
+  
+   }
+
+
+
+   .pictureOne, .pictureTwo, .pictureThree{
+     display: flex;
+     justify-content: center;
+     height: auto;
+     /*400px*/
+     width: 50%;
+     border: 20px solid hsla(260, 28%, 50%, 0.748);
+   }
+
+   /* .pictureOne{
+     display: flex;
+     justify-content: flex-start;
+   }
+
+   .pictureTwo{
+     display: flex;
+     justify-content: center;
+   }
+
+   .pictureThree{
+     display: flex;
+     justify-content: flex-end;
+   } */
+
+/******Media Query for First Row of Gallery Pics*******/
+
+@media screen and (max-width:1018px)
+{ 
+.pictureOne, .pictureTwo, .pictureThree{
+  width: 33.3333%;
+  height:auto;
+  display: flex;
+  justify-content: space-between;
+  
+}
+}
+
+
+
+   .galleryPics2{
+    /* margin-left: 300px; */
+    display: flex;
+    width: 100%;
+  
+   }
+
+   .pictureFour,.pictureFive ,.pictureSix{
+    display: flex;
+    justify-content: space-between;
+     /* margin: 20px 20px; */
+     border: 20px solid hsla(260, 28%, 50%, 0.748);
+
+     height: auto;
+     /*400px*/
+     width: 33.333%
+   }
+
+   
+
+
+
+
+  
+
+
+/**********************************
+******book appointment section*****
+***********************************/
+
+
+.bookAndNailWall{
+  margin-top: 20px;
+  width: 100%;
+  /* background-color: rgba(72, 44, 79, 0.4) */
+}
+
+
+
+
+
+
+/*******************************************
+*******slide in for nail wall image ********
+********************************************/
+
+.nailWall{
+  position:relative; 
+  left: -600px;
+  max-width: 50%;
+  background: blue;
+  -webkit-animation: slide 0.7s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
+}
+
+/*******************************************
+*******media queries for nail wall image ********
+********************************************/
+@media screen and (max-width:768px){
+  .nailWall{
+    height:391px;
+    width:388px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .nailWall{
+    height:200px;
+    width:388px;
+    margin-top: 2rem;
+  }
+}
+
+
+   .bookAppt{
+      /* display: flex;
+      justify-self: flex-end; */
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: 100;
+      font-size: 36px;
+      color: whitesmoke;
+      margin-bottom: 30px;
+      width:50%;
+      height: auto;
+  
+  
+      /* fade in text for book appt */
+        display: inline-block;
+        font-size: 56px;
+        animation: fadeIn linear 10s;
+        -webkit-animation: fadeIn linear 9s;
+        -moz-animation: fadeIn linear 9s;
+        -o-animation: fadeIn linear 9s;
+        -ms-animation: fadeIn linear 9s;
+      }
+      
+      @keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+      
+      @-moz-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+      
+      @-webkit-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+      
+      @-o-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+      
+      @-ms-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+  
+  .bookAppt p{
+    justify-content: center;
+    margin: 15rem 0 0 2rem;
+    font-size: 34px;
+  }
+  button#bookHere{
+    background:whitesmoke;
+    margin-left:2rem;
+  }
+  
+  /**************************
+  Media Query for Book Appt Text
+  *************************/
+  @media screen and (max-width : 768px){
+    .bookAppt p{
+      font-size: 25px;
+      margin:10rem 0  0 2rem;
+    }
+  }
+
+
+
+  @media screen and (max-width : 650px){
+    .bookAppt p{
+      font-size: 16px;
+      margin:7rem 0 0 2rem;
+    }
+
+
+    @media screen and (max-width: 425px) {
+
+      .bookAppt p{
+        margin: 7rem 0 0 2rem;
+      }
+      
+    }
+
+    @media screen and (max-width: 380px) {
+      .bookAppt p {
+        font-size: 14px;
+      }
+      
+    }
+    
+  }
+
+
+  @media screen and (max-width: 375px) {
+    .nailWall{
+      height:188px;
+      width:388px;
+      margin-top:2rem;
+    }
+    
+  }
+  
+
+  @media screen and (max-width: 320px) {
+    .nailWall{
+      height:175px;
+      width:388px;
+      margin-top:2rem;
+    }
+    
+    .bookAppt p{
+      font-size:12px;
+    }
+  }
+  
+
+.addressAndBusiness{
+  display: flex;
+  /* background-color: hsla(260, 28%, 50%, 0.748); */
+  background-blend-mode: luminosity;
+  border-top: black solid 4px; 
+  width:100%;
+}
+
+.address,.followUsAndImages{
+  border-right:2px solid black;
+  margin-top:60px;
+}
+.address{
+  /* margin-top: 40px; */
+  width:33.33%;
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+
+  
+}
+
+.followUsAndImages{
+  display: flex;
+  justify-content: center;
+  width: 33.333%;
+}
+
+
+.followUs{
+  height: 50%;
+  width: 100%;
+  /* margin-top: 40px; */
+}
+
+.followUsText{
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+}
+.followImages{
+  display:flex;
+  justify-content: space-evenly;
+  width: 120px;
+  height: auto;
+ 
+  margin: 12px 0 0 165px;
+  
+}
+.followImages1, .followImages2 , .followImages3, .followImages4{
+ 
+  display: inline-block;
+  width:20%;
+  height:auto;
+}
+
+
+
+@media screen and (max-width:360px) {
+  .followImages1, .followImages2 , .followImages3, 
+  .followImages4{
+margin-left:30%;
+  }
+}
+
+
+/*****************************************************
+*********Media Query for Follow Us and Follow Us Images*************
+******************************************************/
+
+
+@media screen and (max-width:1440px) {
+  .followImages{
+    display: flex;
+    justify-content: space-evenly;
+    width: 120px;
+    height: auto;
+    margin:12px 0 0 175px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .followImages{
+    display: flex;
+    justify-content: space-evenly;
+    width: 120px;
+    height: auto;
+    margin:12px 0 0 136px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .followImages{
+    display: flex;
+    justify-content: space-evenly;
+    width: 120px;
+    height: auto;
+    margin:12px 0 0 96px;
+  }
+}
+
+@media screen and (max-width:840px) {
+  .followImages{
+    display: flex;
+    justify-content: space-evenly;
+    width: 120px;
+    height: auto;
+    margin:12px 0 0 75px;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .followImages{
+    display: flex;
+    justify-content: space-evenly;
+    width: 105px;
+    height: auto;
+    margin:12px 0 0 67px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .followImages{
+    display: flex;
+    justify-content: space-evenly;
+    width: 105px;
+    height: auto;
+    margin:12px 0 0 50px;
+  }
+}
+
+@media screen and (max-width:530px) {
+  .followImages{
+    display: flex;
+    justify-content: space-evenly;
+    width: 95px;
+    height: auto;
+    margin:12px 0 0 33px;
+  }
+}
+
+
+
+@media screen and (max-width:425px) {
+  .followImages{
+    display: flex;
+    justify-content: space-evenly;
+    width: 95px;
+    height: auto;
+    margin:12px 0 0 25px;
+  }
+}
+@media screen and (max-width:400px) {
+  .followImages{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90px;
+    height: auto;
+    margin:12px 0 0 18px;
+  }
+}
+
+
+
+@media screen and (max-width:360px) {
+  .followImages1, .followImages2 , .followImages3, 
+  .followImages4{
+    margin-left:30%;
+  }
+}
+
+
+@media screen and (max-width:320px) {
+  .followImages{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50px;
+    height: auto;
+    margin:12px 0 0 17px;
+  }
+}
+
+  .businessHours{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 50px;
+    margin-top:3rem;
+    width:33.33%;
+    color: whitesmoke;
+  }
+  /******************************************
+  /* Media Query for Business Hours 
+  /*******************************************/
+
+@media screen and (max-width:700px) {
+
+  .address, .followUsText, .businessHours{
+    font-size: 8px;
+  }
+  
+}
+
